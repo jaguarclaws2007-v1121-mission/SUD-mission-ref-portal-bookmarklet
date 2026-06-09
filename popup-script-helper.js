@@ -140,8 +140,9 @@
     }else{
       if(location.pathname === "/event/edit"){
         setStatus("Contact form already open", "#8a810e");	
+      } else {
+        throw new Error("Contact button does not exist");
       }
-      throw new Error("Contact button does not exist");
     }
   }
   

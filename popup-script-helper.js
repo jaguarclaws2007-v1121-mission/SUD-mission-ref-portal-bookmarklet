@@ -307,42 +307,41 @@ launcher.onmouseenter =() => {
       return btn;
   }
 
-// Status element
-
-status = document.createElement("span");
-status.textContent = "Ready";
-status.style.cssText = 'color: #81c784; font-size:12px; padding:0 12px; font-weight:bold;';
-
-// Buttons
-
-bar.appendChild(
-  makeButton("✕",destroyToolbar)
-);
-
-bar.appendChild(
-  makeButton("Contacted",contactedContact)
-);
-
-bar.appendChild(
-  makeButton("Missed",missedContact)
-);
-
-bar.appendChild(status);
-
-bar.appendChild(
-  makeButton("Home",function(){location.href = "https://referralmanager.churchofjesuschrist.org/"})
-);
-
-const spacer = document.createElement("div");
-spacer.style.flex = "1";
-
-bar.appendChild(spacer);
-
-bar.appendChild(
-  makeButton("Hide", hideToolbar)
-);
-
-document.body.appendChild(bar);
-document.body.appendChild(launcher);
-
+  // Status element
+  
+  status = document.createElement("span");
+  status.textContent = "Ready";
+  status.style.cssText = 'color: #81c784; font-size:12px; padding:0 12px; font-weight:bold;';
+  
+  // Buttons
+  
+  bar.appendChild(
+    makeButton("✕",destroyToolbar)
+  );
+  
+  bar.appendChild(
+    makeButton("Contacted",contactedContact)
+  );
+  
+  bar.appendChild(
+    makeButton("Missed",missedContact)
+  );
+  
+  bar.appendChild(status);
+  
+  bar.appendChild(
+    makeButton("Home",function(){location.href = "https://referralmanager.churchofjesuschrist.org/"})
+  );
+  
+  const spacer = document.createElement("div");
+  spacer.style.flex = "1";
+  
+  bar.appendChild(spacer);
+  
+  bar.appendChild(
+    makeButton("Hide", hideToolbar)
+  );
+  
+  document.body.appendChild(bar);
+  document.body.appendChild(launcher);
 }

@@ -52,13 +52,22 @@ javascript: (function() {
 	const chPa = location.pathname;
 	if(chPa === "/persons/mission"){
 		document.querySelectorAll("a.name").forEach(link => {
+			link.title="Open in PopUp";
 			link.addEventListener("click", e => {
 				e.preventDefault();
 				e.stopPropagation();
 				e.stopImmediatePropagation();
 
-				const preLoad = window.open(link.href, "_blank");
-				//preLoad.
+				const popup = window.open(link.href, "popup", "width=300, heigth=600");
+				const plScript = popup.document.createElement("script");
+				plScript.src="https://cdn.jsdelivr.net/gh/jaguarclaws2007-v1121-mission/SUD-mission-ref-portal-bookmarklet@main/popup-script-helper.min.js";
+				
+				
+				popup.addEventListener("load", () => {
+					popup.document.head.appendChild(plScript);
+					
+					
+				});
 			}, true);
 		});
 	}

@@ -59,7 +59,7 @@
 
 				const popup = window.open(link.href, "popup", null);
 				const plScript = popup.document.createElement("script");
-				plScript.src="https://cdn.jsdelivr.net/gh/jaguarclaws2007-v1121-mission/SUD-mission-ref-portal-bookmarklet@main/popup-script-helper.min.js";
+				plScript.src="https://cdn.jsdelivr.net/gh/jaguarclaws2007-v1121-mission/SUD-mission-ref-portal-bookmarklet@main/refmanager_booklet%20v1.0.min.js";
 				
 				popup.addEventListener("load", () => {
 					popup.document.head.appendChild(plScript);

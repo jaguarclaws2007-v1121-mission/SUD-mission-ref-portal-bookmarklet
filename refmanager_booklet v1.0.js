@@ -175,9 +175,9 @@
                     changeTime(1);
 
                     getContactTypeSelect().value = "1: 20";
-					getResultSelect().value = "1: 10";
+					//getResultSelect().value = "1: 10";
 
-                    setStatus("Saving...", "#ffd54f");
+                    //setStatus("Saving...", "#ffd54f");
 
                     await saveForm();
 
@@ -220,9 +220,9 @@
                     changeTime(1);
 
                     getContactTypeSelect().value = "1: 20";
-					getResultSelect().value = "2: 30";
+					//getResultSelect().value = "2: 30";
 
-                    setStatus("Saving...", "#ffd54f");
+                    //setStatus("Saving...", "#ffd54f");
 
                     await saveForm();
 

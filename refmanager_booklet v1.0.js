@@ -179,11 +179,11 @@
 
                     //setStatus("Saving...", "#ffd54f");
 
-                    await saveForm();
+                    //await saveForm();
 
                     setStatus(
-                        "✓ Contacted saved",
-                        "#81c784",
+                        "Awaiting user input",
+                        "#dbc00d",
                         true
                     );
 
@@ -224,11 +224,11 @@
 
                     //setStatus("Saving...", "#ffd54f");
 
-                    await saveForm();
+                    //await saveForm();
 
                     setStatus(
-                        "✓ Missed saved",
-                        "#81c784",
+                        "Awaiting user input",
+                        "#dbc00d",
                         true
                     );
 

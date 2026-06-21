@@ -60,6 +60,12 @@
 				e.currentTarget.innerHTML += " --#C#--";
 				e.currentTarget.style.color = "#b51936";
 
+				link.innerHTML += " --#C#--";
+				link.style.color = "#b51936";
+
+				console.log(`[BOKM] T,E: ${e.innerHTML} T,li: ${link.innerHTML}`);
+
+
 				const popup = window.open(link.href, "popup", null);
 				const plScript = popup.document.createElement("script");
 				plScript.src="https://cdn.jsdelivr.net/gh/jaguarclaws2007-v1121-mission/SUD-mission-ref-portal-bookmarklet@main/refmanager_booklet%20v1.0.min.js";

@@ -167,7 +167,7 @@
     // ACTIONS
     // ======================
 
-	async function whatsApp(){
+	async function addContact(){
 		try {
 			addContact();
             setStatus("Opening form...", "#ffd54f");
@@ -176,13 +176,6 @@
                 try {
                     setStatus("Filling form...", "#ffd54f");
                     changeTime(1);
-
-                    getContactTypeSelect().value = "6: 80";
-					//getResultSelect().value = "1: 10";
-
-                    //setStatus("Saving...", "#ffd54f");
-
-                    //await saveForm();
 
                     setStatus(
                         "Awaiting user input",
@@ -368,9 +361,13 @@
 	);
 
 	bar.appendChild(
-		makeButton("Contacted",contactedContact)
+		makeButton("Add Contact",addContact)
 	);
 
+	/*
+	bar.appendChild(
+		makeButton("Contacted",contactedContact)
+	);
 	bar.appendChild(
 		makeButton("Missed",missedContact)
 	);
@@ -384,6 +381,7 @@
 	bar.appendChild(
 		makeButton("Home",function(){location.href = "https://referralmanager.churchofjesuschrist.org/"})
 	);
+	*/
 
 	const spacer = document.createElement("div");
 	spacer.style.flex = "1";

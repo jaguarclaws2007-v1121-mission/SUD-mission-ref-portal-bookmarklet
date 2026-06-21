@@ -375,13 +375,13 @@
 	bar.appendChild(
 		makeButton("WhatsApp",whatsApp)
 	);
+	*/
 
 	bar.appendChild(status);
 
 	bar.appendChild(
 		makeButton("Home",function(){location.href = "https://referralmanager.churchofjesuschrist.org/"})
 	);
-	*/
 
 	const spacer = document.createElement("div");
 	spacer.style.flex = "1";

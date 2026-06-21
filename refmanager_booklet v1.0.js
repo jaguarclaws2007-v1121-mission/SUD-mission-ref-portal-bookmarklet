@@ -167,7 +167,7 @@
     // ACTIONS
     // ======================
 
-	async function addContact(){
+	async function add_Contact(){
 		try {
 			addContact();
             setStatus("Opening form...", "#ffd54f");
@@ -361,7 +361,7 @@
 	);
 
 	bar.appendChild(
-		makeButton("Add Contact",addContact)
+		makeButton("Add Contact",add_Contact)
 	);
 
 	/*

@@ -167,6 +167,51 @@
     // ACTIONS
     // ======================
 
+	async function whatsApp(){
+		try {
+			addContact();
+            setStatus("Opening form...", "#ffd54f");
+			
+            setTimeout(async function() {
+                try {
+                    setStatus("Filling form...", "#ffd54f");
+                    changeTime(1);
+
+                    getContactTypeSelect().value = "6: 80";
+					//getResultSelect().value = "1: 10";
+
+                    //setStatus("Saving...", "#ffd54f");
+
+                    //await saveForm();
+
+                    setStatus(
+                        "Awaiting user input",
+                        "#dbc00d",
+                        true
+                    );
+
+                } catch (err) {
+
+                    setStatus("Error", "#ef5350");
+
+                    notifyError(
+                        "Unable to Save Contact",
+                        err.message
+                    );
+                }
+
+            }, 1000);
+
+        } catch (err) {
+            setStatus("Error", "#ef5350");
+            notifyError(
+                "Action Failed",
+                err.message
+            );
+        }
+
+    }
+
     async function contactedContact() {
         try {
 			addContact();
@@ -328,6 +373,10 @@
 
 	bar.appendChild(
 		makeButton("Missed",missedContact)
+	);
+
+	bar.appendChild(
+		makeButton("WhatsApp",whatsApp)
 	);
 
 	bar.appendChild(status);

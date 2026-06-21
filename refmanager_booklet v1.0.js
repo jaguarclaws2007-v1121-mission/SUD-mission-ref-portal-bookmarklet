@@ -57,8 +57,7 @@
 				e.stopPropagation();
 				e.stopImmediatePropagation();
 
-				e.innerHTML += "#C#";
-				e.color = "#b51936";
+				e.innerHTML += " --#C#--";
 
 				const popup = window.open(link.href, "popup", null);
 				const plScript = popup.document.createElement("script");
